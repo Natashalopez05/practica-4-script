@@ -12,11 +12,11 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 # Subiendo el servicio de Apache.
 sudo service apache2 start
 
-# Copiando los archivos de configuración en la ruta indicada.
-sudo cp ~/practica-4-script/seguro.conf/etc/apache2/sites-available/
+# Clonando el repositorio.
+git clone https://github.com/Natashalopez05/practica-4-script.git
 
 #Moviendo a la carpeta app1
-cd app1
+cd ~/practica-4-script/app1
 
 # Ejecutando la creación de fatjar
 chmod +x gradlew
