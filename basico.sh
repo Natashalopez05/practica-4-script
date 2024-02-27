@@ -25,6 +25,9 @@ sudo service apache2 start
 # Clonando el repositorio.
 git clone https://github.com/Natashalopez05/practica-4-script.git
 
+# Copiando los archivos de configuración en la ruta indicada.
+sudo cp ~/practica-4-script/seguro.conf /etc/apache2/sites-available/
+
 #Moviendo a la carpeta app1
 cd ~/practica-4-script/app1
 
